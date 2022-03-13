@@ -1,2 +1,2 @@
 Overview
-Platform to monitor patients at home or in the hospitals
+This is a platform to monitor patients at home or in the hospitals by using flask structure and .

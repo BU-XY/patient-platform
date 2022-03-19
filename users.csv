@@ -1,0 +1,5 @@
+userId,access,name,role,temperature,bloodPressure,pulse,oximeter,weight,glucometer
+1,admin,Jack Halberian,admin,none,none,none,none,none,none
+2,mp,John Doe,doctor,none,none,none,none,none,none
+3,patient,Stella Jane,patient,37,110/70,75,0.96,140,120
+4,patient,Tom Sawyer,patient,36,110/75,76,0.96,190,100

@@ -42,6 +42,27 @@ Units in the field of measurement are listed below.
 |weight| kg|int|
 |glucometer| mg/dL|double|
 
+### Chat Module
+#### Patients
+```bash
+# Patient can enter measurement at any time
+# Patient can write a text or upload video or voice message to the MP
+# Patient can book an appointment with the MP
+# Patient can view their medical measurements
+```
+#### Medical Professional (MP)
+```bash
+# Browse Patients
+# Assign a medical device to a Patient
+# Assign Alert and scheduling for medical measurement, e.g., 
+# MP can input data for any patient
+# MP can chat with patients using text, voice or videos.
+# MP can read transcripts of Patient uploaded videos and messages
+# MP can search for keywords in messages and chats
+# MP have a calendar where they can show open time slots for appointments
+# MP can see all appointments booked at any time
+```
+
 ## Installation
 
 ### Prerequisites

@@ -32,7 +32,7 @@ We mainly use Django web framework to achieve the goals in this project and this
 ## Modules
 ### Device Module
 Units in the field of measurement are listed below.
-| Field  | Unit   | Data Type|
+| Test Item  | Unit   | Data Type|
 |  ------|------|------|
 |temperature| ℃|double]
 |blood pressure|mmHg|double|

@@ -51,7 +51,9 @@ Patient Test Data Look Over
 
 ### Chat Module
 Log in screenshot:
+
 <img src='login.png' width=30%>
+
 Since the login interface is pretty much the same, we used Django's default login module.
 #### Patients
 ```bash

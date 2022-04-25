@@ -42,6 +42,13 @@ Units in the field of measurement are listed below.
 |weight| kg|int|
 |glucometer| mg/dL|double|
 
+Patient Test Data Upload
+<img src='upload1.png' width=100%>
+<img src='upload2.png' width=100%>
+
+Patient Test Data Look Over
+<img src='data.gif' width=100%>
+
 ### Chat Module
 #### Patients
 ```bash

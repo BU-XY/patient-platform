@@ -50,6 +50,9 @@ Patient Test Data Look Over
 <img src='data.gif' width=100%>
 
 ### Chat Module
+Log in screenshot:
+<img src='login.png' width=100%>
+Since the login interface is pretty much the same, we used Django's default login module.
 #### Patients
 ```bash
 # Patient can enter measurement at any time

@@ -119,14 +119,3 @@ python manage.py runserver 0:8001
 ```
 Try opening [http://localhost:8001](http://localhost:8001) in the browser.
 Now you are good to go.
-
-### 9. URLs
-#### Signup: [http://localhost:8001/signup](http://localhost:8001/signup)
-![](https://i.imgur.com/T1KkfXi.png)
-#### Login: [http://localhost:8001/login](http://localhost:8001/login)
-![](https://i.imgur.com/KvyiuU6.png)
-#### home for search: [http://localhost:8001/](http://localhost:8001/)
-![](https://i.imgur.com/234qAiS.png)
-#### country page: [http://localhost:8001/country/kenya](http://localhost:8001/country/kenya)
-![](https://i.imgur.com/3zh3YKd.png)
-#### Logout: [http://localhost:8001/logout](http://localhost:8001/logout)

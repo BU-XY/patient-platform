@@ -30,7 +30,7 @@ Main only provides the final Cworking code for each module, and eventually pulls
 
 ### Web Framework
 
-We mainly use Django web framework to achieve the goals in this project and this web framework makes it a lot easier to operate in the project. Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+We mainly use Django web framework as our backend framework to achieve the goals in this project. It makes it a lot easier to operate in the project. Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
 ## Modules
 
@@ -57,6 +57,7 @@ Patient Test Data Look Over
 
 ### Chat Module
 
+### Login Module
 Log in screenshot:
 
 <img src='login.png' width=30%>
@@ -65,42 +66,36 @@ Since the login interface is pretty much the same, we used Django's default logi
 
 #### Patients
 
-```bash
-# Patient can enter measurement at any time
-# Patient can write a text or upload video or voice message to the MP
-# Patient can book an appointment with the MP
-# Patient can view their medical measurements
-```
+* Patient can enter measurement at any time
+* Patient can write a text or upload video or voice message to the MP
+* Patient can book an appointment with the MP
+* Patient can view their medical measurements
 
 #### Medical Professional (MP)
 
-```bash
-# Browse Patients
-# Assign a medical device to a Patient
-# Assign Alert and scheduling for medical measurement, e.g., 
-# MP can input data for any patient
-# MP can chat with patients using text, voice or videos.
-# MP can read transcripts of Patient uploaded videos and messages
-# MP can search for keywords in messages and chats
-# MP have a calendar where they can show open time slots for appointments
-# MP can see all appointments booked at any time
-```
+* Browse Patients
+* Assign a medical device to a Patient
+* Assign Alert and scheduling for medical measurement, e.g., 
+* MP can input data for any patient
+* MP can chat with patients using text, voice or videos.
+* MP can read transcripts of Patient uploaded videos and messages
+* MP can search for keywords in messages and chats
+* MP have a calendar where they can show open time slots for appointments
+* MP can see all appointments booked at any time
 
-## Installation
+## Setup
 
-### Prerequisites
-
-#### 1. Install Python
+### 1. Install Python
 
 Install ``python-3.7.2`` and ``python-pip``. Follow the steps from the below reference document based on your Operating System.
 Reference: [https://docs.python-guide.org/starting/installation/](https://docs.python-guide.org/starting/installation/)
 
-#### 2. Install MySQL
+### 2. Install MySQL
 
 Install ``mysql-8.0.15``. Follow the steps form the below reference document based on your Operating System.
 Reference: [https://dev.mysql.com/doc/refman/5.5/en/](https://dev.mysql.com/doc/refman/5.5/en/)
 
-#### 3. Setup virtual environment
+### 3. Setup virtual environment
 
 ```bash
 # Install virtual environment
@@ -113,20 +108,20 @@ virtualenv ./patient_env
 source patient_env/bin/activate
 ```
 
-#### 4. Clone git repository
+### 4. Clone git repository
 
 ```bash
 git clone "https://github.com/BU-XY/patient-platform"
 ```
 
-#### 5. Install requirements
+### 5. Install requirements
 
 ```bash
 cd patient-platform/
 pip install -r requirements.txt
 ```
 
-#### 6. Setup MySQL
+### 6. Setup MySQL
 
 ```bash
 # open mysql bash
@@ -137,7 +132,7 @@ mysql> source ~/patient-platform/world.sql
 mysql> exit;
 ```
 
-#### 7. Edit project settings
+### 7. Edit project settings
 
 Head to `settings.py` under the project folder, and modify the content below:
 
@@ -163,7 +158,7 @@ EMAIL_HOST_PASSWORD = '<your-email-password>'
 EMAIL_PORT = 587
 ```
 
-#### 8. Run the server
+### 8. Run the server
 
 ```bash
 # Make migrations

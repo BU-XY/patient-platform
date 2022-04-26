@@ -1,10 +1,13 @@
 # Patient Platform
 
 ## Overview
+
 This is a platform to monitor patients at home or in the hospitals.
 
 ## Project Description
+
 ### User
+
 ·Patients: Upload or update personal information and get access to only his/her information.
 
 ·Medical Professionals (Nurses and Doctors): Upload or update personal information and get access to the patients on his/her watch.
@@ -30,39 +33,47 @@ Main only provides the final Cworking code for each module, and eventually pulls
 We mainly use Django web framework to achieve the goals in this project and this web framework makes it a lot easier to operate in the project. Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
 ## Modules
+
 ### Device Module
+
 Units in the field of measurement are listed below.
-| Test Item  | Unit   | Data Type|
-|  ------|------|------|
-|temperature| ℃|double]
-|blood pressure|mmHg|double|
-|pulse| bpm|double|
-|oximeter| %|double|
-|height| cm|int|
-|weight| kg|int|
-|glucometer| mg/dL|double|
+
+| Test Item      | Unit  | Data Type |
+| -------------- | ----- | --------- |
+| temperature    | ℃    | double]   |
+| blood pressure | mmHg  | double    |
+| pulse          | bpm   | double    |
+| oximeter       | %     | double    |
+| height         | cm    | int       |
+| weight         | kg    | int       |
+| glucometer     | mg/dL | double    |
 
 Patient Test Data Upload
-<img src='upload1.png' width=100%>
-<img src='upload2.png' width=100%>
+`<img src='upload1.png' width=100%>`
+`<img src='upload2.png' width=100%>`
 
 Patient Test Data Look Over
-<img src='data.gif' width=100%>
+`<img src='data.gif' width=100%>`
 
 ### Chat Module
+
 Log in screenshot:
 
 <img src='login.png' width=30%>
 
 Since the login interface is pretty much the same, we used Django's default login module.
+
 #### Patients
+
 ```bash
 # Patient can enter measurement at any time
 # Patient can write a text or upload video or voice message to the MP
 # Patient can book an appointment with the MP
 # Patient can view their medical measurements
 ```
+
 #### Medical Professional (MP)
+
 ```bash
 # Browse Patients
 # Assign a medical device to a Patient
@@ -80,44 +91,57 @@ Since the login interface is pretty much the same, we used Django's default logi
 ### Prerequisites
 
 #### 1. Install Python
-Install ```python-3.7.2``` and ```python-pip```. Follow the steps from the below reference document based on your Operating System.
+
+Install ``python-3.7.2`` and ``python-pip``. Follow the steps from the below reference document based on your Operating System.
 Reference: [https://docs.python-guide.org/starting/installation/](https://docs.python-guide.org/starting/installation/)
 
 #### 2. Install MySQL
-Install ```mysql-8.0.15```. Follow the steps form the below reference document based on your Operating System.
+
+Install ``mysql-8.0.15``. Follow the steps form the below reference document based on your Operating System.
 Reference: [https://dev.mysql.com/doc/refman/5.5/en/](https://dev.mysql.com/doc/refman/5.5/en/)
+
 #### 3. Setup virtual environment
+
 ```bash
 # Install virtual environment
 sudo pip install virtualenv
 # Make a directory
-mkdir envs
+mkdir patient_env
 # Create virtual environment
-virtualenv ./envs/
+virtualenv ./patient_env
 # Activate virtual environment
-source envs/bin/activate
+source patient_env/bin/activate
 ```
+
 #### 4. Clone git repository
+
 ```bash
 git clone "https://github.com/BU-XY/patient-platform"
 ```
 
 #### 5. Install requirements
+
 ```bash
 cd patient-platform/
 pip install -r requirements.txt
-#### 6. Load sample data into MySQL
+```
+
+#### 6. Setup MySQL
+
 ```bash
 # open mysql bash
 mysql -u <mysql-user> -p
-# Give the absolute path of the file
+# Enter your password
+# Run SQL script
 mysql> source ~/patient-platform/world.sql
 mysql> exit;
 ```
+
 #### 7. Edit project settings
+
+Head to `settings.py` under the project folder, and modify the content below:
+
 ```bash
-# open settings file
-vim panorbit/settings.py
 # Edit Database configurations with your MySQL configurations.
 # Search for DATABASES section.
 DATABASES = {
@@ -137,9 +161,10 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = '<your-email>'
 EMAIL_HOST_PASSWORD = '<your-email-password>'
 EMAIL_PORT = 587
-# save the file
 ```
+
 #### 8. Run the server
+
 ```bash
 # Make migrations
 python manage.py makemigrations
@@ -150,5 +175,5 @@ python manage.py rebuild_index
 python manage.py runserver 0:8001
 # your server is up on port 8001
 ```
-Try opening [http://localhost:8001](http://localhost:8001) in the browser.
-Now you are good to go.
+
+Open [http://localhost:8001](http://localhost:8001) in the browser.

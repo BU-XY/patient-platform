@@ -49,18 +49,18 @@ Units in the field of measurement are listed below.
 | glucometer     | mg/dL | double    |
 
 Patient Test Data Upload
-`<img src='upload1.png' width=100%>`
-`<img src='upload2.png' width=100%>`
+<img src='images/upload1.png' width=50%>
+<img src='images/upload2.png' width=50%>
 
 Patient Test Data Look Over
-`<img src='data.gif' width=100%>`
+<img src='images/data.gif'>
 
 ### Chat Module
 
 ### Login Module
 Log in screenshot:
 
-<img src='login.png' width=30%>
+<img src='images/login.png' width=30%>
 
 Since the login interface is pretty much the same, we used Django's default login module.
 

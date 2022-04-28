@@ -49,8 +49,8 @@ Units in the field of measurement are listed below.
 | glucometer     | mg/dL | double    |
 
 Patient Test Data Upload
-<img src='images/upload1.png' width=50%>
-<img src='images/upload2.png' width=50%>
+<img src='images/upload1.png' width=30%>
+<img src='images/upload2.png' width=30%>
 
 Patient Test Data Look Over
 <img src='images/data.gif'>

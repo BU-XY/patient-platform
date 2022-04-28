@@ -48,11 +48,21 @@ Units in the field of measurement are listed below.
 | weight         | kg    | int       |
 | glucometer     | mg/dL | double    |
 
+
+
 Patient Test Data Upload
+
+
+
 <img src='images/upload1.png'>
 <img src='images/upload2.png'>
 
+
+
 Patient Test Data Look Over
+
+
+
 <img src='images/data.gif'>
 
 ### Chat Module
